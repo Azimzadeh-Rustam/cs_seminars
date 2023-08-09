@@ -1,4 +1,11 @@
-﻿// 10. Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает вторую цифру этого числа.s
+﻿// 10. Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает вторую цифру этого числа.
+
+int Prompt(string message)
+{
+    Console.Write(message);
+    int value = Convert.ToInt32(Console.ReadLine());
+    return value;
+}
 
 int ShowSecondDigit(int num)
 {
@@ -8,7 +15,11 @@ int ShowSecondDigit(int num)
     return secondDigit;
 }
 
-Console.Write("Введите трёхзначное число: ");
-int number = Convert.ToInt32(Console.ReadLine());
+int number = Prompt("Введите трёхзначное число: ");
 
-Console.WriteLine(ShowSecondDigit(number));
+while(number < 100 || number >= 1000)
+{
+    number = Prompt("Вы ввели не трёхзначное число. Пожалуйста, повторите ввод: ");
+}
+
+Console.WriteLine($"Вторая цифра числа -> {ShowSecondDigit(number)}");
