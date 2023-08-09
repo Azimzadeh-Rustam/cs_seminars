@@ -18,19 +18,15 @@ int ShowThirdDigit(int num)
 
 bool Validate(int num)
 {
-    if(num < 100)
-    {
-        Console.WriteLine("Третьей цифры нет.");
-        return false;
-    }
-    else
-    {
-        return true;
-    }
+    return num < 100? false : true;
 }
 
 int number = Prompt("Введите число: ");
 if(Validate(number))
 {
     Console.WriteLine(ShowThirdDigit(number));
+}
+else
+{
+    Console.WriteLine("Третьей цифры нет");
 }
