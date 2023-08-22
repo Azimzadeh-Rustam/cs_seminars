@@ -2,7 +2,7 @@
 
 bool Validation (int number)
 {
-    return number > 9999 && number < 100000 ? true : false;
+    return number < 10000 || number > 99999 ? true : false;
 }
 
 void IsPalindrome(int number)
