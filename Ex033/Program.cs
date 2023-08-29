@@ -34,7 +34,7 @@ void PrintArray(int[] arr)
 
 int[] array = CreateArrayRndInt(5, -6, 6);
 int number = 5;
-Console.Write($"number = {number}; ");
-PrintArray(array);
 bool answer = FindNumber(array, number);
-Console.WriteLine($" -> {answer}");
+Console.Write($"Присутсиве числа {number} в массиве ");
+PrintArray(array);
+Console.Write(answer ? " Да" : " Нет");
