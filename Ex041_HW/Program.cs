@@ -43,4 +43,4 @@ int[] array = InputArray(size);
 int countPositiveNumbers = CountPositiveNumbers(array);
 Console.Write("В массиве ");
 PrintArray(array);
-Console.Write($" -> {countPositiveNumbers} элемента больше нуля");
+Console.Write($" -> {countPositiveNumbers} элемента/ов больше нуля");
