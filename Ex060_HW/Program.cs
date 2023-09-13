@@ -41,7 +41,7 @@ void PrintArr3dRows(int[,,] cubeArr)
         {
             for(int k = 0; k < depth; k++)
             {
-                Console.Write($"{cubeArr[i, j, k], 5}");
+                Console.Write($"{cubeArr[i, j, k]}({i}, {j}, {k}) ");
             }
             Console.WriteLine();
         }
